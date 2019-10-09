@@ -1,0 +1,312 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$ico-be-name: 'ico-be';
+$ico-be-x: 290px;
+$ico-be-y: 155px;
+$ico-be-offset-x: -290px;
+$ico-be-offset-y: -155px;
+$ico-be-width: 21px;
+$ico-be-height: 13px;
+$ico-be-total-width: 315px;
+$ico-be-total-height: 276px;
+$ico-be-image: '../sprite/sprite.png';
+$ico-be: (290px, 155px, -290px, -155px, 21px, 13px, 315px, 276px, '../sprite/sprite.png', 'ico-be', );
+$ico-close-name: 'ico-close';
+$ico-close-x: 230px;
+$ico-close-y: 120px;
+$ico-close-offset-x: -230px;
+$ico-close-offset-y: -120px;
+$ico-close-width: 48px;
+$ico-close-height: 47px;
+$ico-close-total-width: 315px;
+$ico-close-total-height: 276px;
+$ico-close-image: '../sprite/sprite.png';
+$ico-close: (230px, 120px, -230px, -120px, 48px, 47px, 315px, 276px, '../sprite/sprite.png', 'ico-close', );
+$ico-fb-name: 'ico-fb';
+$ico-fb-x: 290px;
+$ico-fb-y: 178px;
+$ico-fb-offset-x: -290px;
+$ico-fb-offset-y: -178px;
+$ico-fb-width: 10px;
+$ico-fb-height: 19px;
+$ico-fb-total-width: 315px;
+$ico-fb-total-height: 276px;
+$ico-fb-image: '../sprite/sprite.png';
+$ico-fb: (290px, 178px, -290px, -178px, 10px, 19px, 315px, 276px, '../sprite/sprite.png', 'ico-fb', );
+$ico-gl-name: 'ico-gl';
+$ico-gl-x: 290px;
+$ico-gl-y: 128px;
+$ico-gl-offset-x: -290px;
+$ico-gl-offset-y: -128px;
+$ico-gl-width: 17px;
+$ico-gl-height: 17px;
+$ico-gl-total-width: 315px;
+$ico-gl-total-height: 276px;
+$ico-gl-image: '../sprite/sprite.png';
+$ico-gl: (290px, 128px, -290px, -128px, 17px, 17px, 315px, 276px, '../sprite/sprite.png', 'ico-gl', );
+$ico-i1-name: 'ico-i1';
+$ico-i1-x: 84px;
+$ico-i1-y: 243px;
+$ico-i1-offset-x: -84px;
+$ico-i1-offset-y: -243px;
+$ico-i1-width: 29px;
+$ico-i1-height: 29px;
+$ico-i1-total-width: 315px;
+$ico-i1-total-height: 276px;
+$ico-i1-image: '../sprite/sprite.png';
+$ico-i1: (84px, 243px, -84px, -243px, 29px, 29px, 315px, 276px, '../sprite/sprite.png', 'ico-i1', );
+$ico-i2-name: 'ico-i2';
+$ico-i2-x: 123px;
+$ico-i2-y: 243px;
+$ico-i2-offset-x: -123px;
+$ico-i2-offset-y: -243px;
+$ico-i2-width: 29px;
+$ico-i2-height: 29px;
+$ico-i2-total-width: 315px;
+$ico-i2-total-height: 276px;
+$ico-i2-image: '../sprite/sprite.png';
+$ico-i2: (123px, 243px, -123px, -243px, 29px, 29px, 315px, 276px, '../sprite/sprite.png', 'ico-i2', );
+$ico-i3-name: 'ico-i3';
+$ico-i3-x: 221px;
+$ico-i3-y: 198px;
+$ico-i3-offset-x: -221px;
+$ico-i3-offset-y: -198px;
+$ico-i3-width: 30px;
+$ico-i3-height: 30px;
+$ico-i3-total-width: 315px;
+$ico-i3-total-height: 276px;
+$ico-i3-image: '../sprite/sprite.png';
+$ico-i3: (221px, 198px, -221px, -198px, 30px, 30px, 315px, 276px, '../sprite/sprite.png', 'ico-i3', );
+$ico-i4-name: 'ico-i4';
+$ico-i4-x: 180px;
+$ico-i4-y: 198px;
+$ico-i4-offset-x: -180px;
+$ico-i4-offset-y: -198px;
+$ico-i4-width: 31px;
+$ico-i4-height: 30px;
+$ico-i4-total-width: 315px;
+$ico-i4-total-height: 276px;
+$ico-i4-image: '../sprite/sprite.png';
+$ico-i4: (180px, 198px, -180px, -198px, 31px, 30px, 315px, 276px, '../sprite/sprite.png', 'ico-i4', );
+$ico-i5-name: 'ico-i5';
+$ico-i5-x: 94px;
+$ico-i5-y: 198px;
+$ico-i5-offset-x: -94px;
+$ico-i5-offset-y: -198px;
+$ico-i5-width: 34px;
+$ico-i5-height: 30px;
+$ico-i5-total-width: 315px;
+$ico-i5-total-height: 276px;
+$ico-i5-image: '../sprite/sprite.png';
+$ico-i5: (94px, 198px, -94px, -198px, 34px, 30px, 315px, 276px, '../sprite/sprite.png', 'ico-i5', );
+$ico-i6-name: 'ico-i6';
+$ico-i6-x: 45px;
+$ico-i6-y: 198px;
+$ico-i6-offset-x: -45px;
+$ico-i6-offset-y: -198px;
+$ico-i6-width: 39px;
+$ico-i6-height: 31px;
+$ico-i6-total-width: 315px;
+$ico-i6-total-height: 276px;
+$ico-i6-image: '../sprite/sprite.png';
+$ico-i6: (45px, 198px, -45px, -198px, 39px, 31px, 315px, 276px, '../sprite/sprite.png', 'ico-i6', );
+$ico-i7-name: 'ico-i7';
+$ico-i7-x: 290px;
+$ico-i7-y: 0px;
+$ico-i7-offset-x: -290px;
+$ico-i7-offset-y: 0px;
+$ico-i7-width: 25px;
+$ico-i7-height: 31px;
+$ico-i7-total-width: 315px;
+$ico-i7-total-height: 276px;
+$ico-i7-image: '../sprite/sprite.png';
+$ico-i7: (290px, 0px, -290px, 0px, 25px, 31px, 315px, 276px, '../sprite/sprite.png', 'ico-i7', );
+$ico-i8-name: 'ico-i8';
+$ico-i8-x: 43px;
+$ico-i8-y: 243px;
+$ico-i8-offset-x: -43px;
+$ico-i8-offset-y: -243px;
+$ico-i8-width: 31px;
+$ico-i8-height: 31px;
+$ico-i8-total-width: 315px;
+$ico-i8-total-height: 276px;
+$ico-i8-image: '../sprite/sprite.png';
+$ico-i8: (43px, 243px, -43px, -243px, 31px, 31px, 315px, 276px, '../sprite/sprite.png', 'ico-i8', );
+$ico-i9-name: 'ico-i9';
+$ico-i9-x: 138px;
+$ico-i9-y: 198px;
+$ico-i9-offset-x: -138px;
+$ico-i9-offset-y: -198px;
+$ico-i9-width: 32px;
+$ico-i9-height: 30px;
+$ico-i9-total-width: 315px;
+$ico-i9-total-height: 276px;
+$ico-i9-image: '../sprite/sprite.png';
+$ico-i9: (138px, 198px, -138px, -198px, 32px, 30px, 315px, 276px, '../sprite/sprite.png', 'ico-i9', );
+$ico-inst-name: 'ico-inst';
+$ico-inst-x: 290px;
+$ico-inst-y: 70px;
+$ico-inst-offset-x: -290px;
+$ico-inst-offset-y: -70px;
+$ico-inst-width: 18px;
+$ico-inst-height: 18px;
+$ico-inst-total-width: 315px;
+$ico-inst-total-height: 276px;
+$ico-inst-image: '../sprite/sprite.png';
+$ico-inst: (290px, 70px, -290px, -70px, 18px, 18px, 315px, 276px, '../sprite/sprite.png', 'ico-inst', );
+$ico-logo-footer-name: 'ico-logo-footer';
+$ico-logo-footer-x: 230px;
+$ico-logo-footer-y: 60px;
+$ico-logo-footer-offset-x: -230px;
+$ico-logo-footer-offset-y: -60px;
+$ico-logo-footer-width: 50px;
+$ico-logo-footer-height: 50px;
+$ico-logo-footer-total-width: 315px;
+$ico-logo-footer-total-height: 276px;
+$ico-logo-footer-image: '../sprite/sprite.png';
+$ico-logo-footer: (230px, 60px, -230px, -60px, 50px, 50px, 315px, 276px, '../sprite/sprite.png', 'ico-logo-footer', );
+$ico-logo-name: 'ico-logo';
+$ico-logo-x: 230px;
+$ico-logo-y: 0px;
+$ico-logo-offset-x: -230px;
+$ico-logo-offset-y: 0px;
+$ico-logo-width: 50px;
+$ico-logo-height: 50px;
+$ico-logo-total-width: 315px;
+$ico-logo-total-height: 276px;
+$ico-logo-image: '../sprite/sprite.png';
+$ico-logo: (230px, 0px, -230px, 0px, 50px, 50px, 315px, 276px, '../sprite/sprite.png', 'ico-logo', );
+$ico-logo-black-name: 'ico-logo_black';
+$ico-logo-black-x: 0px;
+$ico-logo-black-y: 243px;
+$ico-logo-black-offset-x: 0px;
+$ico-logo-black-offset-y: -243px;
+$ico-logo-black-width: 33px;
+$ico-logo-black-height: 33px;
+$ico-logo-black-total-width: 315px;
+$ico-logo-black-total-height: 276px;
+$ico-logo-black-image: '../sprite/sprite.png';
+$ico-logo-black: (0px, 243px, 0px, -243px, 33px, 33px, 315px, 276px, '../sprite/sprite.png', 'ico-logo_black', );
+$ico-pin-name: 'ico-pin';
+$ico-pin-x: 290px;
+$ico-pin-y: 98px;
+$ico-pin-offset-x: -290px;
+$ico-pin-offset-y: -98px;
+$ico-pin-width: 15px;
+$ico-pin-height: 20px;
+$ico-pin-total-width: 315px;
+$ico-pin-total-height: 276px;
+$ico-pin-image: '../sprite/sprite.png';
+$ico-pin: (290px, 98px, -290px, -98px, 15px, 20px, 315px, 276px, '../sprite/sprite.png', 'ico-pin', );
+$ico-play-name: 'ico-play';
+$ico-play-x: 290px;
+$ico-play-y: 207px;
+$ico-play-offset-x: -290px;
+$ico-play-offset-y: -207px;
+$ico-play-width: 11px;
+$ico-play-height: 13px;
+$ico-play-total-width: 315px;
+$ico-play-total-height: 276px;
+$ico-play-image: '../sprite/sprite.png';
+$ico-play: (290px, 207px, -290px, -207px, 11px, 13px, 315px, 276px, '../sprite/sprite.png', 'ico-play', );
+$ico-search-icon-name: 'ico-search_icon';
+$ico-search-icon-x: 290px;
+$ico-search-icon-y: 41px;
+$ico-search-icon-offset-x: -290px;
+$ico-search-icon-offset-y: -41px;
+$ico-search-icon-width: 19px;
+$ico-search-icon-height: 19px;
+$ico-search-icon-total-width: 315px;
+$ico-search-icon-total-height: 276px;
+$ico-search-icon-image: '../sprite/sprite.png';
+$ico-search-icon: (290px, 41px, -290px, -41px, 19px, 19px, 315px, 276px, '../sprite/sprite.png', 'ico-search_icon', );
+$ico-sprite-name: 'ico-sprite';
+$ico-sprite-x: 0px;
+$ico-sprite-y: 0px;
+$ico-sprite-offset-x: 0px;
+$ico-sprite-offset-y: 0px;
+$ico-sprite-width: 220px;
+$ico-sprite-height: 188px;
+$ico-sprite-total-width: 315px;
+$ico-sprite-total-height: 276px;
+$ico-sprite-image: '../sprite/sprite.png';
+$ico-sprite: (0px, 0px, 0px, 0px, 220px, 188px, 315px, 276px, '../sprite/sprite.png', 'ico-sprite', );
+$ico-zoom-name: 'ico-zoom';
+$ico-zoom-x: 0px;
+$ico-zoom-y: 198px;
+$ico-zoom-offset-x: 0px;
+$ico-zoom-offset-y: -198px;
+$ico-zoom-width: 35px;
+$ico-zoom-height: 35px;
+$ico-zoom-total-width: 315px;
+$ico-zoom-total-height: 276px;
+$ico-zoom-image: '../sprite/sprite.png';
+$ico-zoom: (0px, 198px, 0px, -198px, 35px, 35px, 315px, 276px, '../sprite/sprite.png', 'ico-zoom', );
+$spritesheet-width: 315px;
+$spritesheet-height: 276px;
+$spritesheet-image: '../sprite/sprite.png';
+$spritesheet-sprites: ($ico-be, $ico-close, $ico-fb, $ico-gl, $ico-i1, $ico-i2, $ico-i3, $ico-i4, $ico-i5, $ico-i6, $ico-i7, $ico-i8, $ico-i9, $ico-inst, $ico-logo-footer, $ico-logo, $ico-logo-black, $ico-pin, $ico-play, $ico-search-icon, $ico-sprite, $ico-zoom, );
+$spritesheet: (315px, 276px, '../sprite/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
