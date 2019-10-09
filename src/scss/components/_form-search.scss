@@ -1,0 +1,48 @@
+.search-overlay{
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -800px;
+  transition: margin-top .7s linear;
+  .text-field{
+    display: flex;
+    flex-grow: 1;
+    padding: 20px 0;
+  }
+  form{
+    width: 100%;
+    max-width: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    @include breakpoint(sm){
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    .btns{
+      text-align: center;
+      padding-top: 30px;
+      @include breakpoint(sm){
+        text-align: left;
+        padding-top: 0;
+      }
+    }
+  }
+  .submit{
+    margin-left: 25px;
+    margin-right: 15px;
+  }
+  .close{
+    position: relative;
+    top: 5px;
+  }
+  &.open{
+    margin-top: 0;
+  }
+}

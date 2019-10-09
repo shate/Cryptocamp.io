@@ -1,0 +1,47 @@
+.btn{
+  font-family: 'SFProDisplay-Bold';
+  background-color: transparent;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: $base-font-size;
+  &.pink{
+
+    background-color: $pink ;
+    letter-spacing: .01em;
+    padding: 12px 30px;
+    color: #fff;
+
+    &:hover{
+      background-color: $pink-h;
+    }
+    &-border{
+      background-color: transparent;
+      color: $pink;
+      border: 1px solid $pink;
+      font-size: 18px;
+      letter-spacing: 0.04em;
+      padding: 15px 36px;
+      &:hover{
+        background-color: $pink;
+        color: #fff;
+      }
+
+    }
+  }
+  &:focus{
+    outline: none;
+  }
+  &.black{
+    color: #fff;
+    background-color: $base;
+    letter-spacing: 0.02em;
+    padding: 12px 38px;
+    &:hover{
+      background-color: lighten($base, 5%);
+    }
+  }
+}
+
+
+

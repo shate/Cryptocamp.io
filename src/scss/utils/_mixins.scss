@@ -1,0 +1,113 @@
+	
+/// Gives a card depth effect.
+/// @param {Number} $depth - depth level (between 1 and 5)
+/// @link http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality Google Design
+
+@mixin card($depth, $color) {
+  @if $depth < 1 {
+    box-shadow: none;
+  } @else if $depth > 5 {
+    @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+  } @else {
+    box-shadow: bottom-shadow($depth, $color), top-shadow($depth, $color);  
+  }
+}
+
+//--------------------------------
+// Photoshop Text Shadow
+//--------------------------------
+@mixin text-shadow ($angle: 0, $distance: 0, $spread: 0, $size: 0, $color: #000) {
+  // NOTE: $spread has no effect for text shadows
+  $angle: (180 - $angle) * pi() / 180;
+  $h-shadow: round(cos($angle) * $distance);
+  $v-shadow: round(sin($angle) * $distance);
+  $css-spread: $size * $spread/100;
+  $blur: ($size - $css-spread);
+  
+  @include text-shadow($h-shadow $v-shadow $blur $color);
+}
+
+@mixin breakpoint($point) {
+  @if $point == xxl {
+    @media (min-width: 1500px) { @content ; }
+  }
+  @if $point == xl {
+    @media (min-width: 1200px) { @content ; }
+  }
+  @else if $point == lg {
+    @media (min-width: 992px) { @content ; }
+  }
+  @else if $point == md {
+    @media (min-width: 768px) { @content ; }
+  }
+  @else if $point == sm {
+    @media (min-width: 576px)  { @content ; }
+  }
+  @else if $point == xs {
+    @media (min-width: 376px)  { @content ; }
+  }
+  @else if $point == xxs {
+    @media (min-width: 0)  { @content ; }
+  }
+}
+//Usage:
+// .selector {
+//   color: red;
+  
+//   @include respond-to('small') {
+//     color: blue;
+//   }
+// }	
+@mixin circle($circle-size){
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size; 
+  border-radius: 50%;
+}
+
+@mixin scotch-button-theme($color, $color-text-hover: $color-light) {
+  color: $color;
+  border-color: $color;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-text-hover;
+    background-color: $color;
+  }
+}
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+          eot: "?",
+          svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+          otf: "opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}

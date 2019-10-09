@@ -1,0 +1,31 @@
+.text-field{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  &::-moz-placeholder{
+    font-family: 'SFProDisplay-Medium';
+    font-size: $base-font-size;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+  &::-webkit-input-placeholder{
+    font-family: 'SFProDisplay-Medium';
+    font-size: $base-font-size;
+    color: #fff;
+  }
+  &::-ms-input-placeholder{
+    font-family: 'SFProDisplay-Medium';
+    font-size: $base-font-size;
+    color: #fff;
+  }
+  &::placeholder{
+    font-family: 'SFProDisplay-Medium';
+    font-size: $base-font-size;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+  &:focus{
+    outline: none;
+  }
+}

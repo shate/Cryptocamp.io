@@ -1,0 +1,12 @@
+.badge{
+  font-family: 'SFProDisplay-Bold';
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  color: #fff;
+  background-color: $pink;
+  display: inline-block;
+  letter-spacing: 0.04em;
+  padding: 7px 15px;
+}

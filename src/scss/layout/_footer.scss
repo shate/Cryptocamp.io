@@ -1,0 +1,62 @@
+footer {
+  background-color: $base;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin-top: 90px;
+  @include breakpoint(lg) {
+    padding-bottom: 90px;
+  }
+  .soc{
+    padding-top: 5px;
+    &.desktop{
+      display: none;
+      @include breakpoint(lg){
+        display: flex;
+      }
+    }
+    &.mobil{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      @include breakpoint(lg){
+        display: none;
+      }
+    }
+  }
+}
+.footer{
+  &-logo{
+    font-family: 'SFProDisplay-Bold';
+    display: flex;
+    color: #fff;
+    align-items: center;
+    text-decoration: none;
+    &__title{
+      padding-top: 11px;
+      display: none;
+      @include breakpoint(sm){
+        display: inline-block;
+      }
+    }
+    &.right{
+      padding-top: 5px;
+    }
+  }
+
+  &-left{
+    justify-content: space-between;
+    @include breakpoint(xl){
+      justify-content: start;
+    }
+  }
+  &-center{
+    justify-content: center;
+    @include breakpoint(lg) {
+      justify-content: space-between;
+      padding-left: 12.5%;
+      padding-right: 6%;
+    }
+    flex-grow: 1;
+
+  }
+}

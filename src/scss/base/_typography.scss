@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'SFProDisplay-Regular';
+  src: url('../fonts/SFProDisplay-Regular.eot');
+  src: url('../fonts/SFProDisplay-Regular.eot') format('embedded-opentype'),
+  url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+  url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+  url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProDisplay-Bold';
+  src: url('../fonts/SFProDisplay-Bold.eot');
+  src: url('../fonts/SFProDisplay-Bold.eot') format('embedded-opentype'),
+  url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+  url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+  url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProDisplay-Black';
+  src: url('../fonts/SFProDisplay-Black.eot');
+  src: url('../fonts/SFProDisplay-Black.eot') format('embedded-opentype'),
+  url('../fonts/SFProDisplay-Black.woff2') format('woff2'),
+  url('../fonts/SFProDisplay-Black.woff') format('woff'),
+  url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFProDisplay-Medium';
+  src: url('../fonts/SFProDisplay-Medium.eot');
+  src: url('../fonts/SFProDisplay-Medium.eot') format('embedded-opentype'),
+  url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+  url('../fonts/SFProDisplay-Medium.woff') format('woff'),
+  url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'SFProDisplay-Black';
+  font-size: 30px;
+  line-height: 35px;
+  @include breakpoint(lg) {
+    font-size: 45px;
+    line-height: 71px;
+  }
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'SFProDisplay-Bold';
+  font-size: 25px;
+  line-height: 40px;
+  @include breakpoint(lg){
+    font-size: 45px;
+    line-height: 71px;
+  }
+
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-bottom: 20px;
+
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+}
+h5{
+  font-family: 'SFProDisplay-Bold';
+  font-size: 20px;
+}
+
+.text {
+  &-red {
+    color: $red;
+  }
+
+  &-pink {
+    color: $pink;
+  }
+
+  &-grey {
+    color: $grey;
+  }
+
+}
+
+p {
+  line-height: 1.5;
+}
+
+.price {
+  font-family: 'SFProDisplay-Bold';
+  font-size: 20px;
+  line-height: 24px;
+}
+
+b {
+  font-family: 'SFProDisplay-Bold';
+}

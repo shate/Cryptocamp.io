@@ -1,0 +1,19 @@
+$base-font-size: 16px;
+$base-font: 'SFProDisplay-Regular', sans-serif;
+$base-font-color : #1F1F1F;
+$footer-color : #fff;
+$header-color : #fff;
+$radius : 25px;
+$max-w : 1415px;
+
+
+
+[class^="ico-"]{
+	display: inline-block;
+}
+
+
+
+//Названия бэков
+//Пример заполнения (key1: value1, key2: value2, key3: value3);
+$name : ('header':'' )!default;

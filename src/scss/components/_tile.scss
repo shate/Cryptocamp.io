@@ -1,0 +1,94 @@
+.tile {
+  @include breakpoint(lg) {
+    width: 50%;
+  }
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  &-footer {
+    padding: 15px 30px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4{
+      font-size: $base-font-size;
+      @include breakpoint(xm) {
+        font-size: 18px;
+      }
+      @include breakpoint(sm) {
+        font-size: 26px;
+      }
+    }
+  }
+
+  &-info {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    @include breakpoint(sm) {
+      display: block;
+      padding-top: 0;
+      width: auto;
+    }
+    a {
+      display: inline-block;
+      margin: 0 3px;
+    }
+  }
+
+  &s {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 20;
+    top: -40px;
+    margin: 0 -10px;
+    justify-content: center;
+  }
+
+  &-img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    transition: all .5s ease-in-out;
+    margin-bottom: -3px;
+  }
+
+  &-body {
+    overflow: hidden;
+  }
+
+  &-wrap {
+    position: relative;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 8px 30px -10px rgba(0, 0, 0, 0.18);
+
+      .tile-img {
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  &-format {
+    b {
+      margin: 0 4px;
+    }
+
+    .text-grey {
+      margin-right: 7px;
+    }
+  }
+}

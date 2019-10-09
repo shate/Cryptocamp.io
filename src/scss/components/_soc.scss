@@ -1,0 +1,21 @@
+.soc {
+  &-ico{
+    background-color: $dark;
+    border-radius: 2px;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 5px;
+    opacity: 0.75;
+    transition: 0.3s;
+    &:hover{
+      opacity: 1;
+    }
+    &.play{
+      line-height: 38px;
+    }
+  }
+
+}

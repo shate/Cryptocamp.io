@@ -1,0 +1,70 @@
+.ico{
+  &-logo{
+    @include sprite($ico-logo);
+  }
+  &-search{
+    @include sprite($ico-search_icon);
+  }
+  &-logo-footer{
+    @include sprite($ico-logo-footer);
+    margin-right: 15px;
+  }
+  &-logo-footer-right{
+    @include sprite($ico-logo_black);
+    margin-left: 10px;
+  }
+  &-play{
+    @include sprite($ico-play);
+  }
+  &-fb{
+    @include sprite($ico-fb);
+  }
+  &-pin{
+    @include sprite($ico-pin);
+  }
+  &-inst{
+    @include sprite($ico-inst);
+  }
+  &-be{
+    @include sprite($ico-be);
+  }
+  &-gl{
+    @include sprite($ico-gl);
+  }
+  &-i1{
+    @include sprite($ico-i1);
+  }
+  &-i1{
+    @include sprite($ico-i1);
+  }
+  &-i2{
+    @include sprite($ico-i2);
+  }
+  &-i3{
+    @include sprite($ico-i3);
+  }
+  &-i4{
+    @include sprite($ico-i4);
+  }
+  &-i5{
+    @include sprite($ico-i5);
+  }
+  &-i6{
+    @include sprite($ico-i6);
+  }
+  &-i7{
+    @include sprite($ico-i7);
+  }
+  &-i8{
+    @include sprite($ico-i8);
+  }
+  &-i9{
+    @include sprite($ico-i9);
+  }
+  &-zoom{
+    @include sprite($ico-zoom);
+  }
+  &-close{
+    @include sprite($ico-close);
+  }
+}

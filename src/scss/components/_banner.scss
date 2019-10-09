@@ -1,0 +1,41 @@
+.banner{
+  background-color: $blue;
+  margin-top: 100px;
+  margin-bottom: 145px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 550px;
+  @include breakpoint(lg){
+    flex-direction: row;
+  }
+  .photo{
+    text-align: right;
+    img{
+      height: 100%;
+    }
+  }
+
+  h2{
+    text-align: center;
+    @include breakpoint(lg){
+      text-align: left;
+      margin-bottom: 75px;
+    }
+  }
+  .w-50{
+    width: 100% !important;
+    @include breakpoint(lg){
+      width: 50%;
+    }
+    .slogan.slogan-banner{
+      align-items: center;
+      padding: 40px 0;
+      @include breakpoint(lg){
+        align-items: start;
+        padding:  20px 0 20px 65px;
+      }
+
+    }
+  }
+}
