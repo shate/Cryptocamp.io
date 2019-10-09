@@ -4,3 +4,4 @@
 import 'lazysizes';
 require('./lib/hamburger');
 require('./lib/search-overlay');
+require('./lib/lazy');
